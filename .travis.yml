@@ -1,0 +1,39 @@
+language: node_js
+node_js: stable
+branchs:
+  only:
+  - hexo
+cache:
+  directories:
+  - node_modules
+before_install:
+# 解密私钥
+#- openssl aes-256-cbc -K $encrypted_***_key -iv $encrypted_***_iv -in vps_rsa.enc -out ~/.ssh/vps_rsa -d
+- echo "${SSH_KEY}" >>~/.ssh/vps_rsa
+
+# 修改权限
+- chmod 600 ~/.ssh/vps_rsa
+# 将私钥添加到缓存
+- eval $(ssh-agent)
+- ssh-add ~/.ssh/vps_rsa
+# 生成ssh config 在travis后台配置 $vps_host $vps_port 两个环境变量
+#- echo -e "Host vps\n\tHostName $vps_host\n\tPort $vps_port\n\tUser git\n\tStrictHostKeyChecking no\n\tIdentityFile ~/.ssh/vps_rsa\n\tIdentitiesOnly yes" >> ~/.ssh/config
+- ls -h ~/.ssh/
+# 安装hexo-cli
+- npm install -g hexo-cli
+install:
+# 安装依赖包
+- npm install
+script:
+# 生成静态文件
+- hexo clean
+- hexo generate
+after_success:
+# push到vps仓库
+- cd ./public
+- git init
+- git config user.name "liqsliu"
+- git config user.email "liqsliu@gmail.com"
+- git add .
+- git commit -m "deploy blog"
+- git push --force --quiet "git@github.com:liqsliu/liqsliu.github.io.git" master:master
