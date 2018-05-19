@@ -7,10 +7,10 @@ cache:
   directories:
   - node_modules
 before_install:
+  - export TZ='Asia/Shanghai'
 # 解密私钥
 #- openssl aes-256-cbc -K $encrypted_***_key -iv $encrypted_***_iv -in vps_rsa.enc -out ~/.ssh/vps_rsa -d
-- echo "${SSH_KEY}" > ~/.ssh/vps_rsa
-- ls -h ~/.ssh/
+- echo "${SSH_KEY}" &> ~/.ssh/vps_rsa
 
 # 修改权限
 - chmod 600 ~/.ssh/vps_rsa
@@ -37,5 +37,5 @@ after_success:
 #- git config user.name "liqsliu"
 #- git config user.email "liqsliu@gmail.com"
 - git add .
-- git commit -m "Travis CI Auto Builder"
+- git commit -m "Travis CI Auto Builder at `date +"%Y-%m-%d %H:%M"`"
 - git push --force "git@github.com:liqsliu/liqsliu.github.io.git" master:master
