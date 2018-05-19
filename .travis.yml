@@ -31,7 +31,7 @@ after_success:
 - cd tmp_git
 - git checkout master
 - cd ../
-- mv .tmp_git/.git ./public/
+- mv tmp_git/.git ./public/
 # push到vps仓库
 - cd ./public
 #- git init
