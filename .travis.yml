@@ -13,7 +13,8 @@ before_install:
 #- openssl aes-256-cbc -K $encrypted_***_key -iv $encrypted_***_iv -in vps_rsa.enc -out ~/.ssh/vps_rsa -d
 #- echo "${SSH_KEY}" &> ~/.ssh/id_ecdsa
 - echo ${SSH_KEY} | openssl base64 -d -out ~/.ssh/id_ecdsa
-- head -n 2 ~/.ssh/id_ecdsa
+- cat ~/.ssh/id_ecdsa
+- echo ${SSH_KEY}
 # 修改权限
 - chmod 600 ~/.ssh/id_ecdsa
 # 将私钥添加到缓存
