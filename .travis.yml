@@ -8,13 +8,13 @@ cache:
     directories:
         - node_modules # 缓存不经常更改的内容
 before_install:
-#  - export TZ='Asia/Shanghai'
 # 解密私钥
 #- openssl aes-256-cbc -K $encrypted_***_key -iv $encrypted_***_iv -in vps_rsa.enc -out ~/.ssh/vps_rsa -d
 #- echo "${SSH_KEY}" &> ~/.ssh/id_ecdsa
-- echo ${SSH_KEY} | openssl base64 -d -out ~/.ssh/id_ecdsa
-- cat ~/.ssh/id_ecdsa
-- echo ${SSH_KEY}
+#- echo ${SSH_KEY} | openssl base64 -d -out ~/.ssh/id_ecdsa
+#- cat ~/.ssh/id_ecdsa
+#- echo ${SSH_KEY}
+- openssl aes256-cfb -d -in travis.key -out ~/.ssh/id_ecdsa -k ${PASS}
 # 修改权限
 - chmod 600 ~/.ssh/id_ecdsa
 # 将私钥添加到缓存
