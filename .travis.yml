@@ -4,8 +4,9 @@ branchs:
   only:
   - hexo
 cache:
+  apt: true
   directories:
-  - node_modules
+    - node_modules
 before_install:
   - export TZ='Asia/Shanghai'
 # 解密私钥
