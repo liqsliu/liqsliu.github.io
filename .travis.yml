@@ -38,4 +38,4 @@ after_success:
 - git config user.email "liqsliu@gmail.com"
 - git add .
 - git commit -m "deploy blog"
-- git push --force --quiet "git@github.com:liqsliu/liqsliu.github.io.git" master:master
+- git push "git@github.com:liqsliu/liqsliu.github.io.git" master:master
