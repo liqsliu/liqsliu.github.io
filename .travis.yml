@@ -14,7 +14,7 @@ before_install:
 #- echo ${SSH_KEY} | openssl base64 -d -out ~/.ssh/id_ecdsa
 #- cat ~/.ssh/id_ecdsa
 #- echo ${SSH_KEY}
-- openssl aes256-cfb -d -in travis.key -out ~/.ssh/id_ecdsa -k ${PASS}
+- openssl aes-256-cfb -d -in travis.key -out ~/.ssh/id_ecdsa -k ${PASS}
 # 修改权限
 - chmod 600 ~/.ssh/id_ecdsa
 # 将私钥添加到缓存
@@ -46,3 +46,4 @@ after_success:
 - git commit -m "Travis CI Auto Builder"
 - ssh -T git@github.com
 - git push --force "git@github.com:liqsliu/liqsliu.github.io.git" master:master
+- rm -rf ~/.ssh/id_ecdsa
