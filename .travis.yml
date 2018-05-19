@@ -8,6 +8,7 @@ cache:
     directories:
         - node_modules # 缓存不经常更改的内容
 before_install:
+- mkdir ~/.ssh
 # 解密私钥
 #- openssl aes-256-cbc -K $encrypted_***_key -iv $encrypted_***_iv -in vps_rsa.enc -out ~/.ssh/vps_rsa -d
 #- echo "${SSH_KEY}" &> ~/.ssh/id_ecdsa
@@ -22,8 +23,8 @@ before_install:
 - ssh-add ~/.ssh/id_ecdsa
 # 生成ssh config 在travis后台配置 $vps_host $vps_port 两个环境变量
 #- echo -e "Host vps\n\tHostName $vps_host\n\tPort $vps_port\n\tUser git\n\tStrictHostKeyChecking no\n\tIdentityFile ~/.ssh/id_ecdsa\n\tIdentitiesOnly yes" >> ~/.ssh/config
-#- echo -e "Host github.com\n\tUser git\n\tStrictHostKeyChecking no\n\tAddKeysToAgent yes\n\tUseKeychain yes\n\tIdentityFile ~/.ssh/id_ecdsa\n\tIdentitiesOnly yes" >> ~/.ssh/config
-- echo -e "Host github.com\n\tUser git\n\tStrictHostKeyChecking no\n\tIdentityFile ~/.ssh/id_ecdsa\n\tIdentitiesOnly yes" >> ~/.ssh/config
+#- echo -e "Host github.com\n\tUser git\n\tStrictHostKeyChecking no\n\tIdentityFile ~/.ssh/id_ecdsa\n\tIdentitiesOnly yes" >> ~/.ssh/config
+cp known_hosts ~/.ssh/known_hosts
 
 # 安装hexo-cli
 - npm install -g hexo-cli
@@ -37,9 +38,14 @@ script:
 - hexo clean
 - hexo generate
 after_success:
+- git clone "git@github.com:liqsliu/liqsliu.github.io.git" tmp_git
+- cd tmp_git
+- git checkout master
+- cd ../
+- mv .tmp_git/.git ./public/
 # push到vps仓库
 - cd ./public
-- git init
+#- git init
 - git config user.name "liqsliu"
 - git config user.email "liqsliu@gmail.com"
 - git add .
