@@ -16,10 +16,10 @@ before_install:
 - chmod 600 ~/.ssh/vps_rsa
 # 将私钥添加到缓存
 - eval $(ssh-agent)
-- ssh-add ~/.ssh/vps_rsa
+#- ssh-add ~/.ssh/vps_rsa
 # 生成ssh config 在travis后台配置 $vps_host $vps_port 两个环境变量
 #- echo -e "Host vps\n\tHostName $vps_host\n\tPort $vps_port\n\tUser git\n\tStrictHostKeyChecking no\n\tIdentityFile ~/.ssh/vps_rsa\n\tIdentitiesOnly yes" >> ~/.ssh/config
-#- echo -e "Host *\n\tAddKeysToAgent yes\n\tUseKeychain yes\n\tIdentityFile ~/.ssh/vps_rsa" >> ~/.ssh/config
+- echo -e "Host *\n\tAddKeysToAgent yes\n\tUseKeychain yes\n\tIdentityFile ~/.ssh/vps_rsa" >> ~/.ssh/config
 
 # 安装hexo-cli
 - npm install -g hexo-cli
@@ -38,4 +38,4 @@ after_success:
 #- git config user.email "liqsliu@gmail.com"
 - git add .
 - git commit -m "Travis CI Auto Builder"
-- git push "git@github.com:liqsliu/liqsliu.github.io.git" master:master
+- git push --force "git@github.com:liqsliu/liqsliu.github.io.git" master:master
