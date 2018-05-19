@@ -4,7 +4,6 @@ branchs:
   only:
   - hexo
 cache:
-  apt: true
   directories:
     - node_modules
 before_install:
@@ -39,6 +38,6 @@ after_success:
 - git config user.name "liqsliu"
 - git config user.email "liqsliu@gmail.com"
 - git add .
-- git commit -m "Travis CI Auto Builder at `date +"%Y-%m-%d %H:%M"`"
+- git commit -m "Travis CI Auto Builder"
 - ssh -T git@github.com
 - git push --force "git@github.com:liqsliu/liqsliu.github.io.git" master:master
