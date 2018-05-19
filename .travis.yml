@@ -4,7 +4,6 @@ branchs:
   only:
   - hexo
 cache:
-    apt: true
     directories:
         - node_modules # 缓存不经常更改的内容
 before_install:
@@ -13,8 +12,6 @@ before_install:
 #- openssl aes-256-cbc -K $encrypted_***_key -iv $encrypted_***_iv -in vps_rsa.enc -out ~/.ssh/vps_rsa -d
 #- echo "${SSH_KEY}" &> ~/.ssh/vps_rsa
 - echo ${SSH_KEY} | openssl base64 -d -out ~/.ssh/vps_rsa
-
-
 # 修改权限
 - chmod 600 ~/.ssh/vps_rsa
 # 将私钥添加到缓存
