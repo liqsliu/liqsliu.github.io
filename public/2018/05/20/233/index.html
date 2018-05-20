@@ -7,14 +7,18 @@
   
   <title>233 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
+  <meta name="description" content="from: http://www.ruanyifeng.com/blog/2014/06/git_remote.htmlһ��git cloneԶ�̲����ĵ�һ����ͨ���Ǵ�Զ��������¡һ���汾�⣬��ʱ��Ҫ�õ�git clone��� $ git clone &amp;lt;�汾�����ַ&amp;gt;���磬��¡jQuery�İ汾�⡣ $ git clone https://g">
+<meta name="keywords" content="ת��">
+<meta property="og:type" content="article">
 <meta property="og:title" content="233">
 <meta property="og:url" content="https://blog.liqsliu.ml/2018/05/20/233/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="from: http://www.ruanyifeng.com/blog/2014/06/git_remote.htmlһ��git cloneԶ�̲����ĵ�һ����ͨ���Ǵ�Զ��������¡һ���汾�⣬��ʱ��Ҫ�õ�git clone��� $ git clone &amp;lt;�汾�����ַ&amp;gt;���磬��¡jQuery�İ汾�⡣ $ git clone https://g">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-05-20T02:31:26.744Z">
+<meta property="og:updated_time" content="2018-05-20T02:45:46.644Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="233">
+<meta name="twitter:description" content="from: http://www.ruanyifeng.com/blog/2014/06/git_remote.htmlһ��git cloneԶ�̲����ĵ�һ����ͨ���Ǵ�Զ��������¡һ���汾�⣬��ʱ��Ҫ�õ�git clone��� $ git clone &amp;lt;�汾�����ַ&amp;gt;���磬��¡jQuery�İ汾�⡣ $ git clone https://g">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -83,13 +87,84 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="from-http-www-ruanyifeng-com-blog-2014-06-git-remote-html"><a href="#from-http-www-ruanyifeng-com-blog-2014-06-git-remote-html" class="headerlink" title="from: http://www.ruanyifeng.com/blog/2014/06/git_remote.html"></a>from: <a href="http://www.ruanyifeng.com/blog/2014/06/git_remote.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2014/06/git_remote.html</a></h2><p>һ��git clone<br>Զ�̲����ĵ�һ����ͨ���Ǵ�Զ��������¡һ���汾�⣬��ʱ��Ҫ�õ�git clone���</p>
+<p>$ git clone &lt;�汾�����ַ&gt;<br>���磬��¡jQuery�İ汾�⡣</p>
+<p>$ git clone <a href="https://github.com/jquery/jquery.git" target="_blank" rel="noopener">https://github.com/jquery/jquery.git</a><br>��������ڱ�����������һ��Ŀ¼����Զ�������İ汾��ͬ�������Ҫָ����ͬ��Ŀ¼�������Խ�Ŀ¼����Ϊgit clone����ĵڶ���������</p>
+<p>$ git clone &lt;�汾�����ַ&gt; &lt;����Ŀ¼��&gt;<br>git clone֧�ֶ���Э�飬����HTTP(s)���⣬��֧��SSH��Git�������ļ�Э��ȣ�������һЩ���ӡ�</p>
+<p>$ git clone http[s]://example.com/path/to/repo.git/<br>$ git clone ssh://example.com/path/to/repo.git/<br>$ git clone git://example.com/path/to/repo.git/<br>$ git clone /opt/git/project.git<br>$ git clone file:///opt/git/project.git<br>$ git clone ftp[s]://example.com/path/to/repo.git/<br>$ git clone rsync://example.com/path/to/repo.git/<br>SSHЭ�黹����һ��д����</p>
+<p>$ git clone [user@]example.com:path/to/repo.git/<br>ͨ����˵��GitЭ�������ٶ���죬SSHЭ��������Ҫ�û���֤�ĳ��ϡ�����Э�����ӵ���ϸ������ο��ٷ��ĵ���</p>
+<p>����git remote<br>Ϊ�˱��ڹ�����GitҪ��ÿ��Զ������������ָ��һ����������git remote��������ڹ�����������</p>
+<p>����ѡ���ʱ��git remote�����г�����Զ��������</p>
+<p>$ git remote<br>origin<br>ʹ��-vѡ����Բο�Զ����������ַ��</p>
+<p>$ git remote -v<br>origin  <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:jquery/jquery.git (fetch)<br>origin  <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:jquery/jquery.git (push)<br>���������ʾ����ǰֻ��һ̨Զ������������origin���Լ�������ַ��</p>
+<p>��¡�汾���ʱ����ʹ�õ�Զ�������Զ���Git����Ϊorigin�������������������������Ҫ��git clone�����-oѡ��ָ����</p>
+<p>$ git clone -o jQuery <a href="https://github.com/jquery/jquery.git" target="_blank" rel="noopener">https://github.com/jquery/jquery.git</a><br>$ git remote<br>jQuery<br>���������ʾ����¡��ʱ��ָ��Զ����������jQuery��</p>
+<p>git remote show������������������Բ鿴����������ϸ��Ϣ��</p>
+<p>$ git remote show &lt;������&gt;<br>git remote add������������Զ��������</p>
+<p>$ git remote add &lt;������&gt; &lt;��ַ&gt;<br>git remote rm��������ɾ��Զ��������</p>
+<p>$ git remote rm &lt;������&gt;<br>git remote rename��������Զ�������ĸ�����</p>
+<p>$ git remote rename &lt;ԭ������&gt; &lt;��������&gt;<br>����git fetch<br>һ��Զ�������İ汾�����˸��£�Git�������commit������Ҫ����Щ����ȡ�ر��أ���ʱ��Ҫ�õ�git fetch���</p>
+<p>$ git fetch &lt;Զ��������&gt;<br>�������ĳ��Զ�������ĸ��£�ȫ��ȡ�ر��ء�</p>
+<p>git fetch����ͨ�������鿴�����˵Ľ��̣���Ϊ��ȡ�صĴ�����㱾�صĿ�������û��Ӱ�졣</p>
+<p>Ĭ������£�git fetchȡ�����з�֧��branch���ĸ��¡����ֻ��ȡ���ض���֧�ĸ��£�����ָ����֧����</p>
+<p>$ git fetch &lt;Զ��������&gt; &lt;��֧��&gt;<br>���磬ȡ��origin������master��֧��</p>
+<p>$ git fetch origin master<br>��ȡ�صĸ��£��ڱ���������Ҫ��”Զ��������/��֧��”����ʽ��ȡ������origin������master����Ҫ��origin/master��ȡ��</p>
+<p>git branch�����-rѡ����������鿴Զ�̷�֧��-aѡ��鿴���з�֧��</p>
+<p>$ git branch -r<br>origin/master</p>
+<p>$ git branch -a</p>
+<ul>
+<li>master<br>remotes/origin/master<br>���������ʾ�����������ĵ�ǰ��֧��master��Զ�̷�֧��origin/master��</li>
+</ul>
+<p>ȡ��Զ�������ĸ����Ժ󣬿��������Ļ����ϣ�ʹ��git checkout�����һ���µķ�֧��</p>
+<p>$ git checkout -b newBrach origin/master<br>���������ʾ����origin/master�Ļ����ϣ�����һ���·�֧��</p>
+<p>���⣬Ҳ����ʹ��git merge�������git rebase����ڱ��ط�֧�Ϻϲ�Զ�̷�֧��</p>
+<p>$ git merge origin/master</p>
+<h1 id="����"><a href="#����" class="headerlink" title="����"></a>����</h1><p>$ git rebase origin/master<br>���������ʾ�ڵ�ǰ��֧�ϣ��ϲ�origin/master��</p>
+<p>�ġ�git pull<br>git pull����������ǣ�ȡ��Զ������ĳ����֧�ĸ��£����뱾�ص�ָ����֧�ϲ�������������ʽ�����е㸴�ӡ�</p>
+<p>$ git pull &lt;Զ��������&gt; &lt;Զ�̷�֧��&gt;:&lt;���ط�֧��&gt;<br>���磬ȡ��origin������next��֧���뱾�ص�master��֧�ϲ�����Ҫд������������</p>
+<p>$ git pull origin next:master<br>���Զ�̷�֧���뵱ǰ��֧�ϲ�����ð�ź���Ĳ��ֿ���ʡ�ԡ�</p>
+<p>$ git pull origin next<br>���������ʾ��ȡ��origin/next��֧�����뵱ǰ��֧�ϲ���ʵ���ϣ����ͬ������git fetch������git merge��</p>
+<p>$ git fetch origin<br>$ git merge origin/next<br>��ĳЩ���ϣ�Git���Զ��ڱ��ط�֧��Զ�̷�֧֮�䣬����һ��׷�ٹ�ϵ��tracking�������磬��git clone��ʱ�����б��ط�֧Ĭ����Զ��������ͬ����֧������׷�ٹ�ϵ��Ҳ����˵�����ص�master��֧�Զ�”׷��”origin/master��֧��</p>
+<p>GitҲ�����ֶ�����׷�ٹ�ϵ��</p>
+<p>git branch –set-upstream master origin/next<br>��������ָ��master��֧׷��origin/next��֧��</p>
+<p>�����ǰ��֧��Զ�̷�֧����׷�ٹ�ϵ��git pull�Ϳ���ʡ��Զ�̷�֧����</p>
+<p>$ git pull origin<br>���������ʾ�����صĵ�ǰ��֧�Զ����Ӧ��origin����”׷�ٷ�֧”��remote-tracking branch�����кϲ���</p>
+<p>�����ǰ��ֻ֧��һ��׷�ٷ�֧����Զ��������������ʡ�ԡ�</p>
+<p>$ git pull<br>���������ʾ����ǰ��֧�Զ���Ψһһ��׷�ٷ�֧���кϲ���</p>
+<p>����ϲ���Ҫ����rebaseģʽ������ʹ��–rebaseѡ�</p>
+<p>$ git pull –rebase &lt;Զ��������&gt; &lt;Զ�̷�֧��&gt;:&lt;���ط�֧��&gt;<br>���Զ������ɾ����ĳ����֧��Ĭ������£�git pull ��������ȡԶ�̷�֧��ʱ��ɾ����Ӧ�ı��ط�֧������Ϊ�˷�ֹ�����������˲�����Զ������������git pull��֪����ɾ���˱��ط�֧��</p>
+<p>���ǣ�����Ըı������Ϊ�����ϲ��� -p �ͻ��ڱ���ɾ��Զ���Ѿ�ɾ���ķ�֧��</p>
+<p>$ git pull -p</p>
+<h1 id="��ͬ�����������"><a href="#��ͬ�����������" class="headerlink" title="��ͬ�����������"></a>��ͬ�����������</h1><p>$ git fetch –prune origin<br>$ git fetch -p<br>�塢git push<br>git push�������ڽ����ط�֧�ĸ��£����͵�Զ�����������ĸ�ʽ��git pull������¡�</p>
+<p>$ git push &lt;Զ��������&gt; &lt;���ط�֧��&gt;:&lt;Զ�̷�֧��&gt;<br>ע�⣬��֧����˳���д����&lt;��Դ��&gt;:&lt;Ŀ�ĵ�&gt;������git pull��&lt;Զ�̷�֧&gt;:&lt;���ط�֧&gt;����git push��&lt;���ط�֧&gt;:&lt;Զ�̷�֧&gt;��</p>
+<p>���ʡ��Զ�̷�֧�������ʾ�����ط�֧������֮����”׷�ٹ�ϵ”��Զ�̷�֧��ͨ������ͬ�����������Զ�̷�֧�����ڣ���ᱻ�½���</p>
+<p>$ git push origin master<br>���������ʾ�������ص�master��֧���͵�origin������master��֧��������߲����ڣ���ᱻ�½���</p>
+<p>���ʡ�Ա��ط�֧�������ʾɾ��ָ����Զ�̷�֧����Ϊ���ͬ������һ���յı��ط�֧��Զ�̷�֧��</p>
+<p>$ git push origin :master</p>
+<h1 id="��ͬ��"><a href="#��ͬ��" class="headerlink" title="��ͬ��"></a>��ͬ��</h1><p>$ git push origin –delete master<br>���������ʾɾ��origin������master��֧��</p>
+<p>�����ǰ��֧��Զ�̷�֧֮�����׷�ٹ�ϵ���򱾵ط�֧��Զ�̷�֧������ʡ�ԡ�</p>
+<p>$ git push origin<br>���������ʾ������ǰ��֧���͵�origin�����Ķ�Ӧ��֧��</p>
+<p>�����ǰ��ֻ֧��һ��׷�ٷ�֧����ô������������ʡ�ԡ�</p>
+<p>$ git push<br>�����ǰ��֧������������׷�ٹ�ϵ�������ʹ��-uѡ��ָ��һ��Ĭ����������������Ϳ��Բ����κβ���ʹ��git push��</p>
+<p>$ git push -u origin master<br>����������ص�master��֧���͵�origin������ͬʱָ��originΪĬ������������Ϳ��Բ����κβ���ʹ��git push�ˡ�</p>
+<p>�����κβ�����git push��Ĭ��ֻ���͵�ǰ��֧�������simple��ʽ�����⣬����һ��matching��ʽ�������������ж�Ӧ��Զ�̷�֧�ı��ط�֧��Git 2.0�汾֮ǰ��Ĭ�ϲ���matching���������ڸ�ΪĬ�ϲ���simple��ʽ�����Ҫ�޸�������ã����Բ���git config���</p>
+<p>$ git config –global push.default matching</p>
+<h1 id="����-1"><a href="#����-1" class="headerlink" title="����"></a>����</h1><p>$ git config –global push.default simple<br>����һ����������ǲ����Ƿ���ڶ�Ӧ��Զ�̷�֧�������ص����з�֧�����͵�Զ����������ʱ��Ҫʹ��–allѡ�</p>
+<p>$ git push –all origin<br>���������ʾ�������б��ط�֧�����͵�origin������</p>
+<p>���Զ�������İ汾�ȱ��ذ汾���£�����ʱGit�ᱨ����Ҫ�����ڱ�����git pull�ϲ����죬Ȼ�������͵�Զ����������ʱ�������һ��Ҫ���ͣ�����ʹ��–forceѡ�</p>
+<p>$ git push –force origin<br>��������ʹ��–forceѡ��������Զ�������ϸ��µİ汾�����ǡ��������ȷ��Ҫ������������Ӧ�þ�������ʹ��–forceѡ�</p>
+<p>���git push�������ͱ�ǩ��tag��������ʹ��–tagsѡ�</p>
+<p>$ git push origin –tags<br>���꣩</p>
+<p>�ĵ���Ϣ<br>��Ȩ����������ת��-������-������-�������������⹲��3.0����֤��<br>�������ڣ� 2014��6��12��<br>�������ݣ� ���� ? �������ֲ�<br>�ļ�����ǰ����·������δ��������Ҵ��ߡ�</p>
+
       
     </div>
     <footer class="article-footer">
       <a data-url="https://blog.liqsliu.ml/2018/05/20/233/" data-id="cjhe7p4rs00026slt8x7qsl18" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ת��/">ת��</a></li></ul>
+
     </footer>
   </div>
   
@@ -115,9 +190,23 @@
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/ת��/">ת��</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/ת��/" style="font-size: 10px;">ת��</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
