@@ -79,10 +79,12 @@ theme: landscape
 
 
 # Disqus 
-disqus:
-  enable: true
-  shortname: liqsliu
-  count: true
+disqus_shortname: liqsliu
+
+#disqus:
+#  enable: true
+#  shortname: liqsliu
+#  count: true
 
 
 

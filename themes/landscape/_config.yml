@@ -39,11 +39,6 @@ fb_app_id:
 
 
 #disqus
-#disqus_shortname: liqsliu
+disqus_shortname: liqsliu
 
-# Disqus 
-disqus:
-  enable: true
-  shortname: liqsliu
-  count: true
 
