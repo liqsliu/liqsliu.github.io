@@ -84,7 +84,6 @@ disqus:
   shortname: liqsliu
   count: true
 
-  disqus_shortname: liqsliu
 
 
 # Deployment
