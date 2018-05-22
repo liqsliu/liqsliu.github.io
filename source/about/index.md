@@ -5,11 +5,8 @@ date: 2018-05-22 17:22:05
 
 ## just for fun
 ===
-
-[github pages](https:/liqsliu.github.io)
-
-> [![Build Status](https://travis-ci.org/liqsliu/liqsliu.github.io.svg?branch=hexo)](https://travis-ci.org/liqsliu/liqsliu.github.io)
-> <https://github.com/liqsliu/liqsliu.github.io>
+<https:/liqsliu.github.io>
+<https://github.com/liqsliu/liqsliu.github.io>[![Build Status](https://travis-ci.org/liqsliu/liqsliu.github.io.svg?branch=hexo)](https://travis-ci.org/liqsliu/liqsliu.github.io)
 <html>
 <table><thead>
 <tr>
