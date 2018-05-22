@@ -35,3 +35,18 @@ twitter:
 google_plus:
 fb_admins:
 fb_app_id:
+
+
+
+#duoshuo_shortname:
+
+# Disqus 
+disqus:
+  enable: true
+  shortname: liqsliu
+  count: true
+
+# Hypercomments
+#hypercomments_id:
+
+
