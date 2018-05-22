@@ -3,9 +3,6 @@ title: about
 date: 2018-05-22 17:22:05
 ---
 
-## just for fun
----
-[![Build Staus](https://travis-ci.org/liqsliu/liqsliu.github.io.svg?branch=hexo)](https://github.com/liqsliu/liqsliu.github.io>)
 <html>
 <table><thead>
 <tr>
@@ -26,3 +23,4 @@ date: 2018-05-22 17:22:05
 </tr>
 </tbody></table>
 </html>
+[![Build Staus](https://travis-ci.org/liqsliu/liqsliu.github.io.svg?branch=hexo)](https://github.com/liqsliu/liqsliu.github.io>)
