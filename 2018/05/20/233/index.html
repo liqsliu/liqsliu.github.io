@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-119321802-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+  
+  <title>233 | 随心所欲</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="from: http://www.ruanyifeng.com/blog/2014/06/git_remote.html一、git clone远程操作的第一步，通常是从远程主机克隆一个版本库，这时就要用到git clone命令。 $ git clone &amp;lt;版本库的网址&amp;gt;比如，克隆jQuery的版本库。 $ git clone https://github.com/jquery/jque">
+<meta name="keywords" content="转载">
+<meta property="og:type" content="article">
+<meta property="og:title" content="233">
+<meta property="og:url" content="https://blog.liqsliu.ml/2018/05/20/233/index.html">
+<meta property="og:site_name" content="随心所欲">
+<meta property="og:description" content="from: http://www.ruanyifeng.com/blog/2014/06/git_remote.html一、git clone远程操作的第一步，通常是从远程主机克隆一个版本库，这时就要用到git clone命令。 $ git clone &amp;lt;版本库的网址&amp;gt;比如，克隆jQuery的版本库。 $ git clone https://github.com/jquery/jque">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-05-20T02:49:11.789Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="233">
+<meta name="twitter:description" content="from: http://www.ruanyifeng.com/blog/2014/06/git_remote.html一、git clone远程操作的第一步，通常是从远程主机克隆一个版本库，这时就要用到git clone命令。 $ git clone &amp;lt;版本库的网址&amp;gt;比如，克隆jQuery的版本库。 $ git clone https://github.com/jquery/jque">
+  
+    <link rel="alternate" href="/atom.xml" title="随心所欲" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">随心所欲</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">my blog</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://blog.liqsliu.ml"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-233" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/05/20/233/" class="article-date">
+  <time datetime="2018-05-20T02:31:26.000Z" itemprop="datePublished">2018-05-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      233
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="from-http-www-ruanyifeng-com-blog-2014-06-git-remote-html"><a href="#from-http-www-ruanyifeng-com-blog-2014-06-git-remote-html" class="headerlink" title="from: http://www.ruanyifeng.com/blog/2014/06/git_remote.html"></a>from: <a href="http://www.ruanyifeng.com/blog/2014/06/git_remote.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2014/06/git_remote.html</a></h2><p>一、git clone<br>远程操作的第一步，通常是从远程主机克隆一个版本库，这时就要用到git clone命令。</p>
+<p>$ git clone &lt;版本库的网址&gt;<br>比如，克隆jQuery的版本库。</p>
+<p>$ git clone <a href="https://github.com/jquery/jquery.git" target="_blank" rel="noopener">https://github.com/jquery/jquery.git</a><br>该命令会在本地主机生成一个目录，与远程主机的版本库同名。如果要指定不同的目录名，可以将目录名作为git clone命令的第二个参数。</p>
+<p>$ git clone &lt;版本库的网址&gt; &lt;本地目录名&gt;<br>git clone支持多种协议，除了HTTP(s)以外，还支持SSH、Git、本地文件协议等，下面是一些例子。</p>
+<p>$ git clone http[s]://example.com/path/to/repo.git/<br>$ git clone ssh://example.com/path/to/repo.git/<br>$ git clone git://example.com/path/to/repo.git/<br>$ git clone /opt/git/project.git<br>$ git clone file:///opt/git/project.git<br>$ git clone ftp[s]://example.com/path/to/repo.git/<br>$ git clone rsync://example.com/path/to/repo.git/<br>SSH协议还有另一种写法。</p>
+<p>$ git clone [user@]example.com:path/to/repo.git/<br>通常来说，Git协议下载速度最快，SSH协议用于需要用户认证的场合。各种协议优劣的详细讨论请参考官方文档。</p>
+<p>二、git remote<br>为了便于管理，Git要求每个远程主机都必须指定一个主机名。git remote命令就用于管理主机名。</p>
+<p>不带选项的时候，git remote命令列出所有远程主机。</p>
+<p>$ git remote<br>origin<br>使用-v选项，可以参看远程主机的网址。</p>
+<p>$ git remote -v<br>origin  <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:jquery/jquery.git (fetch)<br>origin  <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:jquery/jquery.git (push)<br>上面命令表示，当前只有一台远程主机，叫做origin，以及它的网址。</p>
+<p>克隆版本库的时候，所使用的远程主机自动被Git命名为origin。如果想用其他的主机名，需要用git clone命令的-o选项指定。</p>
+<p>$ git clone -o jQuery <a href="https://github.com/jquery/jquery.git" target="_blank" rel="noopener">https://github.com/jquery/jquery.git</a><br>$ git remote<br>jQuery<br>上面命令表示，克隆的时候，指定远程主机叫做jQuery。</p>
+<p>git remote show命令加上主机名，可以查看该主机的详细信息。</p>
+<p>$ git remote show &lt;主机名&gt;<br>git remote add命令用于添加远程主机。</p>
+<p>$ git remote add &lt;主机名&gt; &lt;网址&gt;<br>git remote rm命令用于删除远程主机。</p>
+<p>$ git remote rm &lt;主机名&gt;<br>git remote rename命令用于远程主机的改名。</p>
+<p>$ git remote rename &lt;原主机名&gt; &lt;新主机名&gt;<br>三、git fetch<br>一旦远程主机的版本库有了更新（Git术语叫做commit），需要将这些更新取回本地，这时就要用到git fetch命令。</p>
+<p>$ git fetch &lt;远程主机名&gt;<br>上面命令将某个远程主机的更新，全部取回本地。</p>
+<p>git fetch命令通常用来查看其他人的进程，因为它取回的代码对你本地的开发代码没有影响。</p>
+<p>默认情况下，git fetch取回所有分支（branch）的更新。如果只想取回特定分支的更新，可以指定分支名。</p>
+<p>$ git fetch &lt;远程主机名&gt; &lt;分支名&gt;<br>比如，取回origin主机的master分支。</p>
+<p>$ git fetch origin master<br>所取回的更新，在本地主机上要用”远程主机名/分支名”的形式读取。比如origin主机的master，就要用origin/master读取。</p>
+<p>git branch命令的-r选项，可以用来查看远程分支，-a选项查看所有分支。</p>
+<p>$ git branch -r<br>origin/master</p>
+<p>$ git branch -a</p>
+<ul>
+<li>master<br>remotes/origin/master<br>上面命令表示，本地主机的当前分支是master，远程分支是origin/master。</li>
+</ul>
+<p>取回远程主机的更新以后，可以在它的基础上，使用git checkout命令创建一个新的分支。</p>
+<p>$ git checkout -b newBrach origin/master<br>上面命令表示，在origin/master的基础上，创建一个新分支。</p>
+<p>此外，也可以使用git merge命令或者git rebase命令，在本地分支上合并远程分支。</p>
+<p>$ git merge origin/master</p>
+<h1 id="或者"><a href="#或者" class="headerlink" title="或者"></a>或者</h1><p>$ git rebase origin/master<br>上面命令表示在当前分支上，合并origin/master。</p>
+<p>四、git pull<br>git pull命令的作用是，取回远程主机某个分支的更新，再与本地的指定分支合并。它的完整格式稍稍有点复杂。</p>
+<p>$ git pull &lt;远程主机名&gt; &lt;远程分支名&gt;:&lt;本地分支名&gt;<br>比如，取回origin主机的next分支，与本地的master分支合并，需要写成下面这样。</p>
+<p>$ git pull origin next:master<br>如果远程分支是与当前分支合并，则冒号后面的部分可以省略。</p>
+<p>$ git pull origin next<br>上面命令表示，取回origin/next分支，再与当前分支合并。实质上，这等同于先做git fetch，再做git merge。</p>
+<p>$ git fetch origin<br>$ git merge origin/next<br>在某些场合，Git会自动在本地分支与远程分支之间，建立一种追踪关系（tracking）。比如，在git clone的时候，所有本地分支默认与远程主机的同名分支，建立追踪关系，也就是说，本地的master分支自动”追踪”origin/master分支。</p>
+<p>Git也允许手动建立追踪关系。</p>
+<p>git branch –set-upstream master origin/next<br>上面命令指定master分支追踪origin/next分支。</p>
+<p>如果当前分支与远程分支存在追踪关系，git pull就可以省略远程分支名。</p>
+<p>$ git pull origin<br>上面命令表示，本地的当前分支自动与对应的origin主机”追踪分支”（remote-tracking branch）进行合并。</p>
+<p>如果当前分支只有一个追踪分支，连远程主机名都可以省略。</p>
+<p>$ git pull<br>上面命令表示，当前分支自动与唯一一个追踪分支进行合并。</p>
+<p>如果合并需要采用rebase模式，可以使用–rebase选项。</p>
+<p>$ git pull –rebase &lt;远程主机名&gt; &lt;远程分支名&gt;:&lt;本地分支名&gt;<br>如果远程主机删除了某个分支，默认情况下，git pull 不会在拉取远程分支的时候，删除对应的本地分支。这是为了防止，由于其他人操作了远程主机，导致git pull不知不觉删除了本地分支。</p>
+<p>但是，你可以改变这个行为，加上参数 -p 就会在本地删除远程已经删除的分支。</p>
+<p>$ git pull -p</p>
+<h1 id="等同于下面的命令"><a href="#等同于下面的命令" class="headerlink" title="等同于下面的命令"></a>等同于下面的命令</h1><p>$ git fetch –prune origin<br>$ git fetch -p<br>五、git push<br>git push命令用于将本地分支的更新，推送到远程主机。它的格式与git pull命令相仿。</p>
+<p>$ git push &lt;远程主机名&gt; &lt;本地分支名&gt;:&lt;远程分支名&gt;<br>注意，分支推送顺序的写法是&lt;来源地&gt;:&lt;目的地&gt;，所以git pull是&lt;远程分支&gt;:&lt;本地分支&gt;，而git push是&lt;本地分支&gt;:&lt;远程分支&gt;。</p>
+<p>如果省略远程分支名，则表示将本地分支推送与之存在”追踪关系”的远程分支（通常两者同名），如果该远程分支不存在，则会被新建。</p>
+<p>$ git push origin master<br>上面命令表示，将本地的master分支推送到origin主机的master分支。如果后者不存在，则会被新建。</p>
+<p>如果省略本地分支名，则表示删除指定的远程分支，因为这等同于推送一个空的本地分支到远程分支。</p>
+<p>$ git push origin :master</p>
+<h1 id="等同于"><a href="#等同于" class="headerlink" title="等同于"></a>等同于</h1><p>$ git push origin –delete master<br>上面命令表示删除origin主机的master分支。</p>
+<p>如果当前分支与远程分支之间存在追踪关系，则本地分支和远程分支都可以省略。</p>
+<p>$ git push origin<br>上面命令表示，将当前分支推送到origin主机的对应分支。</p>
+<p>如果当前分支只有一个追踪分支，那么主机名都可以省略。</p>
+<p>$ git push<br>如果当前分支与多个主机存在追踪关系，则可以使用-u选项指定一个默认主机，这样后面就可以不加任何参数使用git push。</p>
+<p>$ git push -u origin master<br>上面命令将本地的master分支推送到origin主机，同时指定origin为默认主机，后面就可以不加任何参数使用git push了。</p>
+<p>不带任何参数的git push，默认只推送当前分支，这叫做simple方式。此外，还有一种matching方式，会推送所有有对应的远程分支的本地分支。Git 2.0版本之前，默认采用matching方法，现在改为默认采用simple方式。如果要修改这个设置，可以采用git config命令。</p>
+<p>$ git config –global push.default matching</p>
+<h1 id="或者-1"><a href="#或者-1" class="headerlink" title="或者"></a>或者</h1><p>$ git config –global push.default simple<br>还有一种情况，就是不管是否存在对应的远程分支，将本地的所有分支都推送到远程主机，这时需要使用–all选项。</p>
+<p>$ git push –all origin<br>上面命令表示，将所有本地分支都推送到origin主机。</p>
+<p>如果远程主机的版本比本地版本更新，推送时Git会报错，要求先在本地做git pull合并差异，然后再推送到远程主机。这时，如果你一定要推送，可以使用–force选项。</p>
+<p>$ git push –force origin<br>上面命令使用–force选项，结果导致远程主机上更新的版本被覆盖。除非你很确定要这样做，否则应该尽量避免使用–force选项。</p>
+<p>最后，git push不会推送标签（tag），除非使用–tags选项。</p>
+<p>$ git push origin –tags<br>（完）</p>
+<p>文档信息<br>版权声明：自由转载-非商用-非衍生-保持署名（创意共享3.0许可证）<br>发表日期： 2014年6月12日<br>更多内容： 档案 ? 开发者手册<br>文集：《前方的路》，《未来世界的幸存者》</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://blog.liqsliu.ml/2018/05/20/233/" data-id="cjhhefa0o0006uslt0vbq83ki" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/转载/">转载</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/05/21/521/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          521
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/05/19/test-1/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">test</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/debug/">debug</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/转载/">转载</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/debug/" style="font-size: 10px;">debug</a> <a href="/tags/转载/" style="font-size: 10px;">转载</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/05/21/521/">521</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/20/233/">233</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/19/test-1/">test</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/19/test/">test</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/12/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 随心所欲<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
