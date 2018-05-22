@@ -2,6 +2,7 @@
 menu:
   Home: /
   Archives: /archives
+  About: /about
 rss: /atom.xml
 
 # Content
@@ -15,7 +16,7 @@ widgets:
 - tag
 - tagcloud
 - archive
-- recent_posts
+  #- recent_posts
 
 # display widgets at the bottom of index pages (pagination == 2)
 index_widgets:
@@ -37,16 +38,7 @@ fb_admins:
 fb_app_id:
 
 
-
-#duoshuo_shortname:
-
-# Disqus 
-disqus:
-  enable: true
-  shortname: liqsliu
-  count: true
-
-# Hypercomments
-#hypercomments_id:
+#disqus
+#disqus_shortname: liqsliu
 
 
